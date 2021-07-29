@@ -20,7 +20,7 @@ weelo_app - clean architecture
 
     ├── android
     ├── ios
-    ├── android
+    ├── ____tests____
     ├── src
     │   ├── data
     │   │   ├── controllers
