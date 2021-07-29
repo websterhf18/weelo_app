@@ -9,6 +9,7 @@ module.exports = {
                 alias: {
                     '@controllers': './src/data/controllers',
                     '@redux': './src/data/redux',
+                    '@utils': './src/data/utils',
                     '@repositories': './src/data/repositories',
                     '@contracts': './src/domain/contracts',
                     '@entity': './src/domain/entity',
