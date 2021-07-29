@@ -17,27 +17,28 @@ A Big Real Estate company requires creating mobile application by obtain informa
 ## Folder Structure
 
 weelo_app - clean architecture
-├── android
-├── ios
-├── android
-├── src
-│   ├── data
-│   │   ├── controllers
-│   │   ├── redux
-│   │   ├── repositories
-│   │   ├── utils
-│   ├── domain
-│   │   ├── contracts
-│   │   ├── entity
-│   │   ├── usecases
-│   ├── presentation
-│   │   ├── components
-│   │   ├── navigation
-│   │   ├── screens
-│   │   ├── App.tsx
-├── index.js
-├── package.json
-└── README.md
+
+    ├── android
+    ├── ios
+    ├── android
+    ├── src
+    │   ├── data
+    │   │   ├── controllers
+    │   │   ├── redux
+    │   │   ├── repositories
+    │   │   ├── utils
+    │   ├── domain
+    │   │   ├── contracts
+    │   │   ├── entity
+    │   │   ├── usecases
+    │   ├── presentation
+    │   │   ├── components
+    │   │   ├── navigation
+    │   │   ├── screens
+    │   │   ├── App.tsx
+    ├── index.js
+    ├── package.json
+    └── README.md
 
 ## Installation
 ```
