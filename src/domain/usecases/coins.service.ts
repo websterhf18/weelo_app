@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import { IndicadorContract } from "../contracts/indicador.contract";
 import { IndicadorByTypeEntity, IndicadorEntity } from "../entity/indicador.entity";
 

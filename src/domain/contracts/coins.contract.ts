@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import { IndicadorByTypeEntity, IndicadorEntity } from "../entity/coins.entity";
 
 export abstract class IndicadorContract {

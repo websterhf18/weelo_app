@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import React from 'react';
 import { enableScreens } from 'react-native-screens';
 import { createStackNavigator } from '@react-navigation/stack';

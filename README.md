@@ -14,4 +14,45 @@ A Big Real Estate company requires creating mobile application by obtain informa
 - Get the data of crypto currency from Request.
 - Get the detail of crypto currency from Request.
 
+## Folder Structure
+
+weelo_app - clean architecture
+├── android
+├── ios
+├── android
+├── src
+│   ├── data
+│   │   ├── controllers
+│   │   ├── redux
+│   │   ├── repositories
+│   │   ├── utils
+│   ├── domain
+│   │   ├── contracts
+│   │   ├── entity
+│   │   ├── usecases
+│   ├── presentation
+│   │   ├── components
+│   │   ├── navigation
+│   │   ├── screens
+│   │   ├── App.tsx
+├── index.js
+├── package.json
+└── README.md
+
+## Installation
+```
+npm install or yarn
+npx pod-install ios
+```
+
+## Start app
+```
+npx react-native run-android
+npx react-native run-ios
+```
+## Run tests
+```
+npm run tests
+yarn tests
+```
 ---

@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, PermissionsAndroid, Platform } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';

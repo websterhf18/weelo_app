@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import { IndicadorByTypeEntity, IndicadorEntity } from "@presenter/domain/entity/indicador.entity";
 import { IndicadoresService } from "@presenter/domain/usecases/indicadores.service";
 import { IndicadoresAxiosRepo } from "../repositories/indicadores.axios.repo";
@@ -6,7 +11,7 @@ const indicadoresRepo = new IndicadoresAxiosRepo();
 const indicadoresService = new IndicadoresService(indicadoresRepo);
 
 export class IndicadoresController {
-
+    
     async getIndicadores(): Promise<IndicadorEntity[]> {
         try {
             return await indicadoresService.getIndicadores();

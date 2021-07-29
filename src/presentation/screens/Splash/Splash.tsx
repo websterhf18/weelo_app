@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import React, { useEffect } from 'react';
 import { Text } from 'react-native';
 import Snackbar from 'react-native-snackbar';

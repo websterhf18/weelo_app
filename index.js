@@ -1,5 +1,7 @@
 /**
- * @format
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
  */
 
 import React from 'react';

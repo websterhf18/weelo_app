@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import { StyleSheet } from 'react-native';
 import { ConfigEntity } from '@hooks/useConfigTheme';
 

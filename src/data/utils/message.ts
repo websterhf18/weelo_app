@@ -1,3 +1,8 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import Snackbar from 'react-native-snackbar';
 
 export const sendMessageSnackbar = (title: string, variant: string, duration: number) => {

@@ -1,9 +1,13 @@
+/**
+ * @author Hugo Garcia
+ * @description Funcion para obtener todos los indicadores
+ * @returns 
+ */
 import { createSlice, Dispatch } from '@reduxjs/toolkit';
 
 import { IndicadoresController } from '@presenter/adapters/controllers/indicadores.controller';
 
 const indicadoresController = new IndicadoresController()
-
 export const getIndicadoresRedux = () => async (dispatch: Dispatch) => {
   try {
     const data = await indicadoresController.getIndicadores();
@@ -13,7 +17,6 @@ export const getIndicadoresRedux = () => async (dispatch: Dispatch) => {
     throw new Error(error);
   }
 };
-
 export const getIndicadoresByTypeRedux = (type: string) => async (dispatch: Dispatch) => {
   try {
     const data = await indicadoresController.getIndicadoresByType(type);
