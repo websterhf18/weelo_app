@@ -1,6 +1,6 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Drawer navigation
  * @returns 
  */
 import React from 'react';

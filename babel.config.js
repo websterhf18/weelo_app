@@ -10,6 +10,7 @@ module.exports = {
                     '@controllers': './src/data/controllers',
                     '@redux': './src/data/redux',
                     '@utils': './src/data/utils',
+                    '@hooks': './src/data/hooks',
                     '@repositories': './src/data/repositories',
                     '@contracts': './src/domain/contracts',
                     '@entity': './src/domain/entity',

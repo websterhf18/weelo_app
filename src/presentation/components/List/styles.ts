@@ -1,6 +1,6 @@
 /**
  * @author Hugo Garcia
- * @description Styles of Home
+ * @description Styles List Component
  * @returns 
  */
 import { StyleSheet } from 'react-native';
@@ -10,7 +10,10 @@ export default (props: ConfigEntity) => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: props.backgroundScreens
-    }
+    },
+    text: {
+      marginTop: 20,
+      textAlign: 'center',
+    },
   })
 }

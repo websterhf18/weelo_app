@@ -1,6 +1,6 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Styles of Detail
  * @returns 
  */
 import { StyleSheet } from 'react-native';

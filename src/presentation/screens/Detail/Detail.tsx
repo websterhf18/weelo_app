@@ -1,6 +1,6 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Detail Screen
  * @returns 
  */
 import React, { useEffect, useState } from 'react';
@@ -20,72 +20,72 @@ import useStyles from './styles';
 import { ActivityIndicator } from 'react-native';
 
 interface Props {
-  navigation: any;
-  route: any;
+    navigation: any;
+    route: any;
 }
 
 const Detail: React.FC<Props & SlicesDetail> = (props) => {
-  const { configTheme } = useConfigTheme();
-  const styles = useStyles(configTheme);
+    const { configTheme } = useConfigTheme();
+    const styles = useStyles(configTheme);
 
-  const dispatch = useDispatch()
-  const seriesRedux = useSelector(({ indicadores }: { indicadores: any }) => indicadores.series);
+    const dispatch = useDispatch()
+    //const seriesRedux = useSelector(({ indicadores }: { indicadores: any }) => indicadores.series);
 
-  const [data, setData] = useState(fromJS([]));
-  const [loadingRefresh, setLoadingRefresh] = useState(true)
+    const [data, setData] = useState(fromJS([]));
+    const [loadingRefresh, setLoadingRefresh] = useState(true)
 
-  useEffect(() => {
-    async function fetch() {
-      try {
-        await dispatch(props.getIndicadoresByTypeRedux(props.route.params?.item.name));
-        setLoadingRefresh(false);
-      } catch (error) {
-        console.log('**** ERROR in View *****', error);
-      }
+    useEffect(() => {
+        async function fetch() {
+            try {
+                //await dispatch(props.getIndicadoresByTypeRedux(props.route.params?.item.name));
+                setLoadingRefresh(false);
+            } catch (error) {
+                console.log('**** ERROR in View *****', error);
+            }
+        }
+        fetch()
+    }, [])
+
+    useEffect(() => {
+        //console.log('seriesRedux', seriesRedux)
+        //setData(fromJS(seriesRedux))
+    }, [/**seriesRedux**/])
+
+    const onRefresh = async () => {
+        try {
+            setLoadingRefresh(true);
+            //await dispatch(props.getIndicadoresByTypeRedux(props.route.params?.item.name))
+            setLoadingRefresh(false);
+        } catch (error) {
+            setLoadingRefresh(false);
+        }
     }
-    fetch()
-  }, [])
 
-  useEffect(() => {
-    console.log('seriesRedux', seriesRedux)
-    setData(fromJS(seriesRedux))
-  }, [seriesRedux])
+    /**const renderItem = ({ item, index }: { item: ImmutableMap<string, any>, index: number }) => (
+        <RenderItemDetail item={item} />
+    )**/
 
-  const onRefresh = async () => {
-    try {
-      setLoadingRefresh(true);
-      await dispatch(props.getIndicadoresByTypeRedux(props.route.params?.item.name))
-      setLoadingRefresh(false);
-    } catch (error) {
-      setLoadingRefresh(false);
-    }
-  }
+    return (
+        <SafeAreaView style={styles.container}>
+            <HeaderBack
+                routerBack='Coins'
+                title={props.route.params?.item?.data?.nombre}
+                onPress={props.navigation.goBack}
+            />
+            {loadingRefresh ? (
+                <ActivityIndicator color='black' size={30} style={{ margin: 20 }} />
+            ) : (
+                {/** <List
+                    dataSource={data}
+                    extraData={fromJS(seriesRedux)}
+                    renderItem={renderItem}
+                    refreshing={loadingRefresh}
+                    onRefresh={onRefresh}
+                />*/}
+            )}
 
-  const renderItem = ({ item, index }: { item: ImmutableMap<string, any>, index: number }) => (
-    <RenderItemDetail item={item} />
-  )
-
-  return (
-    <SafeAreaView style={styles.container}>
-      <HeaderBack
-        routerBack='Indicadores'
-        title={props.route.params?.item?.data?.nombre}
-        onPress={props.navigation.goBack}
-      />
-      {loadingRefresh ? (
-        <ActivityIndicator color='black' size={30} style={{ margin: 20 }} />
-      ) : (
-        <List
-          dataSource={data}
-          extraData={fromJS(seriesRedux)}
-          renderItem={renderItem}
-          refreshing={loadingRefresh}
-          onRefresh={onRefresh}
-        />
-      )}
-
-    </SafeAreaView>
-  )
+        </SafeAreaView>
+    )
 }
 
 export default Detail;

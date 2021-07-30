@@ -22,6 +22,9 @@
             "@utils/*": [
                 "data/utils/*"
             ],
+            "@hooks/*": [
+                "data/hooks/*"
+            ],
             "@repositories/*": [
                 "data/repositories/*"
             ],

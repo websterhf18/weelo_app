@@ -1,15 +1,15 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Entity for Inject Functions
  * @returns 
  */
 import { Dispatch } from "@reduxjs/toolkit";
 
 
 export interface Props {
-  route: any;
-  navigation: any;
+    route: any;
+    navigation: any;
 }
 
-export interface SlicesDetail {}
-export interface SlicesHome {}
+export interface SlicesDetail { }
+export interface SlicesHome { }
