@@ -1,48 +1,34 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
- * @returns 
+ * @description Redux Slice Coins
+ * @returns
  */
 import { createSlice, Dispatch } from '@reduxjs/toolkit';
+import { CoinsController } from '@controllers/coins.controller';
 
-import { IndicadoresController } from '@presenter/adapters/controllers/indicadores.controller';
-
-const indicadoresController = new IndicadoresController()
-export const getIndicadoresRedux = () => async (dispatch: Dispatch) => {
-  try {
-    const data = await indicadoresController.getIndicadores();
-    await dispatch(setIndicadores(data));
-  } catch (error) {
-    console.log('*** getIndicadoresRedux Error: ****', error.message);
-    throw new Error(error);
-  }
-};
-export const getIndicadoresByTypeRedux = (type: string) => async (dispatch: Dispatch) => {
-  try {
-    const data = await indicadoresController.getIndicadoresByType(type);
-    await dispatch(setSeries(data));
-  } catch (error) {
-    console.log('*** getIndicadoresByTypeRedux Error: ****', error.message);
-    throw new Error(error);
-  }
+const coinsController = new CoinsController();
+export const getCoinsRedux = () => async (dispatch: Dispatch) => {
+    try {
+        const data = await coinsController.getCoins();
+        await dispatch(setCoins(data));
+    } catch (error) {
+        console.log('*** getCoinsRedux Error: ****', error.message);
+        throw new Error(error);
+    }
 };
 
 const coinsSlice = createSlice({
-  name: 'indicadores',
-  initialState: {
-    indicadores: [],
-    series: [],
-  },
-  reducers: {
-    setIndicadores: (state, action) => {
-      state.indicadores = action.payload;
+    name: 'coins',
+    initialState: {
+        coins_list: []
     },
-    setSeries: (state, action) => {
-      state.series = action.payload;
+    reducers: {
+        setCoins: (state, action) => {
+            state.coins_list = action.payload;
+        }
     },
-  },
 });
 
-export const { setIndicadores, setSeries } = coinsSlice.actions;
+export const { setCoins } = coinsSlice.actions;
 
 export default coinsSlice.reducer;

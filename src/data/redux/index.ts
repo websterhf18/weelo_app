@@ -1,6 +1,6 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Index of Redux Slices
  * @returns 
  */
 import { configureStore } from '@reduxjs/toolkit';

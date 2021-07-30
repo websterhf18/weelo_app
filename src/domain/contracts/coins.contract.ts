@@ -1,11 +1,10 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Contract of Coins
  * @returns 
  */
-import { IndicadorByTypeEntity, IndicadorEntity } from "../entity/coins.entity";
+import { CoinsEntity } from "@entity/coins.entity";
 
-export abstract class IndicadorContract {
-    abstract getIndicadores(): Promise<IndicadorEntity[]>;
-    abstract getIndicadoresByType(type: string): Promise<IndicadorByTypeEntity[]>;
+export abstract class CoinsContract {
+    abstract getCoins(): Promise<CoinsEntity[]>;
 }

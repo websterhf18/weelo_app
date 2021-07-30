@@ -1,14 +1,13 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Entity of Coins
  * @returns 
  */
-export interface IndicadorEntity {
+/**export interface IndicadorEntity {
     name: string;
     data: Data
     
 }
-
 interface Data {
     codigo: string;
     nombre: string;
@@ -16,8 +15,9 @@ interface Data {
     fecha: string;
     valor: string;
 }
-
 export interface IndicadorByTypeEntity {
     fecha: string;
     valor: string;
-}
+}**/
+
+export interface CoinsEntity {}

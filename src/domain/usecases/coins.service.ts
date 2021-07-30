@@ -1,33 +1,19 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Use cases for coins
  * @returns 
  */
-import { IndicadorContract } from "../contracts/indicador.contract";
-import { IndicadorByTypeEntity, IndicadorEntity } from "../entity/indicador.entity";
+import { CoinsContract } from "@contracts/coins.contract";
+import { CoinsEntity } from "@entity/coins.entity";
 
-export class IndicadoresService {
-    constructor(private indicadoresRepo: IndicadorContract) {};
+export class CoinsService {
+    constructor(private coinsRepo: CoinsContract) {};
 
-    /**
-     * @author Alexis Noriega
-     * @description Funcion para obtener todos los indicadores
-     * @returns 
-     */
-    async getIndicadores(): Promise<IndicadorEntity[]> {
+    async getCoins(): Promise<CoinsEntity[]> {
         try {
-            return await this.indicadoresRepo.getIndicadores();
+            return await this.coinsRepo.getCoins();
         } catch (error) {
-            console.log('***** Error IndicadoresService -> getIndicadores *****', error.message);
-            throw new Error(error);
-        }
-    }
-
-    async getIndicadoresByType(type: string): Promise<IndicadorByTypeEntity[]> {
-        try {
-            return await this.indicadoresRepo.getIndicadoresByType(type);
-        } catch (error) {
-            console.log('***** Error IndicadoresService -> getIndicadoresByType *****', error.message);
+            console.log('***** Error CoinsService -> getCoins *****', error.message);
             throw new Error(error);
         }
     }

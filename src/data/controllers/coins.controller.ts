@@ -1,31 +1,22 @@
 /**
  * @author Hugo Garcia
- * @description Funcion para obtener todos los indicadores
+ * @description Controller of coins
  * @returns 
  */
-import { IndicadorByTypeEntity, IndicadorEntity } from "@presenter/domain/entity/indicador.entity";
-import { IndicadoresService } from "@presenter/domain/usecases/indicadores.service";
-import { IndicadoresAxiosRepo } from "../repositories/indicadores.axios.repo";
+import { CoinsEntity } from "@entity/coins.entity";
+import { CoinsService } from "@usecases/coins.service";
+import { CoinsCacheRepo } from "@repositories/coins.cache.repo";
 
-const indicadoresRepo = new IndicadoresAxiosRepo();
-const indicadoresService = new IndicadoresService(indicadoresRepo);
+const coinsRepo = new CoinsCacheRepo();
+const coinsService = new CoinsService(coinsRepo);
 
-export class IndicadoresController {
+export class CoinsController {
     
-    async getIndicadores(): Promise<IndicadorEntity[]> {
+    async getCoins(): Promise<CoinsEntity[]> {
         try {
-            return await indicadoresService.getIndicadores();
+            return await coinsService.getCoins();
         } catch (error) {
-            console.log('***** Error IndicadoresController -> getIndicadores *****', error.message);
-            throw new Error(error);
-        }
-    }
-
-    async getIndicadoresByType(type: string): Promise<IndicadorByTypeEntity[]> {
-        try {
-            return await indicadoresService.getIndicadoresByType(type);
-        } catch (error) {
-            console.log('***** Error IndicadoresController -> getIndicadoresByType *****', error.message);
+            console.log('***** Error CoinsController -> getCoins *****', error.message);
             throw new Error(error);
         }
     }

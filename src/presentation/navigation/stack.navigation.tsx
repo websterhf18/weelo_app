@@ -8,14 +8,14 @@ import { enableScreens } from 'react-native-screens';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import InjectHOC from './InjectHOC';
-import { Props, SlicesDetail, SlicesLogin } from './interfaceInject'
+import { Props, SlicesDetail } from './interfaceInject'
 
 import DrawerNavigation from './drawer.navigation';
 
 import Splash from '@screens/Splash/Splash';
 import Detail from '@screens/Detail/Detail';
 
-import { getIndicadoresByTypeRedux } from '@presenter/io/indicadoresSlice';
+//import { getCoinsRedux } from '@redux/coinsSlice';
 
 enableScreens();
 
@@ -24,14 +24,14 @@ const Stack = createStackNavigator();
 function StackNavigation() {
     return (
         <Stack.Navigator
-            initialRouteName='Indicadores'
+            initialRouteName='Coins'
             screenOptions={{
                 headerShown: false
             }}
         >
             <Stack.Screen name="Splash" component={Splash} />
-            <Stack.Screen name="Detail" component={InjectHOC<Props, SlicesDetail>(Detail, { getIndicadoresByTypeRedux })} />
-            <Stack.Screen name="Indicadores" component={DrawerNavigation} />
+            <Stack.Screen name="Detail" component={InjectHOC<Props, SlicesDetail>(Detail, {})} />
+            <Stack.Screen name="Coins" component={DrawerNavigation} />
         </Stack.Navigator>
     );
 }

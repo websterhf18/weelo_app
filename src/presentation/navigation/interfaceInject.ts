@@ -11,12 +11,5 @@ export interface Props {
   navigation: any;
 }
 
-export interface SlicesLogin {}
-
-export interface SlicesHome {
-  getIndicadoresRedux: () => (dispatch: Dispatch) => void;
-}
-
-export interface SlicesDetail {
-  getIndicadoresByTypeRedux: (type: string) => (dispatch: Dispatch) => void;
-}
+export interface SlicesDetail {}
+export interface SlicesHome {}
