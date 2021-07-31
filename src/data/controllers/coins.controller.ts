@@ -6,8 +6,10 @@
 import { CoinsEntity } from "@entity/coins.entity";
 import { CoinsService } from "@usecases/coins.service";
 import { CoinsCacheRepo } from "@repositories/coins.cache.repo";
+//import { CoinsAxiosRepo } from "@repositories/coins.axios.repo";
 
 const coinsRepo = new CoinsCacheRepo();
+//const coinsRepo = new CoinsAxiosRepo();
 const coinsService = new CoinsService(coinsRepo);
 
 export class CoinsController {
