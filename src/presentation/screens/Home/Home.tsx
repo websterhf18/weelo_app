@@ -63,7 +63,7 @@ const Home: React.FC<Props & SlicesHome> = (props) => {
             {loadingRefresh ? (
                 <ActivityIndicator color='black' size={30} style={{ margin: 20 }} />
             ) : (
-                <Text>{'Hola mundo'}</Text>
+                <Text testID="jest_id">{'Hola mundo'}</Text>
             )}
         </SafeAreaView>
     )

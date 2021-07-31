@@ -1,0 +1,118 @@
+73a0d31e405f029acc004a2f82a4c459
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _drawer = require("@react-navigation/drawer");
+
+var _InjectHOC = _interopRequireDefault(require("./InjectHOC"));
+
+var _Home = _interopRequireDefault(require("../screens/Home/Home"));
+
+function cov_1s57iosguk() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/presentation/navigation/drawer.navigation.tsx";
+  var hash = "8c94344743cbf9914e1a2832e2a66dcc4c26fbf9";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/presentation/navigation/drawer.navigation.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 16,
+          column: 15
+        },
+        end: {
+          line: 16,
+          column: 38
+        }
+      },
+      "1": {
+        start: {
+          line: 19,
+          column: 4
+        },
+        end: {
+          line: 28,
+          column: 6
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "DrawerNavigation",
+        decl: {
+          start: {
+            line: 18,
+            column: 9
+          },
+          end: {
+            line: 18,
+            column: 25
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 28
+          },
+          end: {
+            line: 29,
+            column: 1
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "8c94344743cbf9914e1a2832e2a66dcc4c26fbf9"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_1s57iosguk = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1s57iosguk();
+var Drawer = (cov_1s57iosguk().s[0]++, (0, _drawer.createDrawerNavigator)());
+
+function DrawerNavigation() {
+  cov_1s57iosguk().f[0]++;
+  cov_1s57iosguk().s[1]++;
+  return _react.default.createElement(Drawer.Navigator, {
+    initialRouteName: "Home",
+    screenOptions: {
+      headerShown: false
+    }
+  }, _react.default.createElement(Drawer.Screen, {
+    name: "Home",
+    component: (0, _InjectHOC.default)(_Home.default, {})
+  }));
+}
+
+var _default = DrawerNavigation;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRyYXdlci5uYXZpZ2F0aW9uLnRzeCJdLCJuYW1lcyI6WyJEcmF3ZXIiLCJEcmF3ZXJOYXZpZ2F0aW9uIiwiaGVhZGVyU2hvd24iLCJIb21lIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBS0E7O0FBQ0E7O0FBRUE7O0FBR0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJQSxJQUFNQSxNQUFNLDZCQUFHLG9DQUFILENBQVo7O0FBRUEsU0FBU0MsZ0JBQVQsR0FBNEI7QUFBQTtBQUFBO0FBQ3hCLFNBQ0ksNkJBQUMsTUFBRCxDQUFRLFNBQVI7QUFDSSxJQUFBLGdCQUFnQixFQUFDLE1BRHJCO0FBRUksSUFBQSxhQUFhLEVBQUU7QUFDWEMsTUFBQUEsV0FBVyxFQUFFO0FBREY7QUFGbkIsS0FNSSw2QkFBQyxNQUFELENBQVEsTUFBUjtBQUFlLElBQUEsSUFBSSxFQUFDLE1BQXBCO0FBQTJCLElBQUEsU0FBUyxFQUFFLHdCQUE2QkMsYUFBN0IsRUFBbUMsRUFBbkM7QUFBdEMsSUFOSixDQURKO0FBVUg7O2VBRWNGLGdCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAYXV0aG9yIEh1Z28gR2FyY2lhXG4gKiBAZGVzY3JpcHRpb24gRHJhd2VyIG5hdmlnYXRpb25cbiAqIEByZXR1cm5zIFxuICovXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY3JlYXRlRHJhd2VyTmF2aWdhdG9yIH0gZnJvbSAnQHJlYWN0LW5hdmlnYXRpb24vZHJhd2VyJztcblxuaW1wb3J0IEluamVjdEhPQyBmcm9tICcuL0luamVjdEhPQyc7XG5pbXBvcnQgeyBQcm9wcywgU2xpY2VzSG9tZSB9IGZyb20gJy4vaW50ZXJmYWNlSW5qZWN0JztcblxuaW1wb3J0IEhvbWUgZnJvbSAnQHNjcmVlbnMvSG9tZS9Ib21lJztcblxuLy9pbXBvcnQgeyBnZXRDb2luc1JlZHV4IH0gZnJvbSAnQHJlZHV4L2NvaW5zU2xpY2UnO1xuXG5jb25zdCBEcmF3ZXIgPSBjcmVhdGVEcmF3ZXJOYXZpZ2F0b3IoKTtcblxuZnVuY3Rpb24gRHJhd2VyTmF2aWdhdGlvbigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8RHJhd2VyLk5hdmlnYXRvclxuICAgICAgICAgICAgaW5pdGlhbFJvdXRlTmFtZT0nSG9tZSdcbiAgICAgICAgICAgIHNjcmVlbk9wdGlvbnM9e3tcbiAgICAgICAgICAgICAgICBoZWFkZXJTaG93bjogZmFsc2UsXG4gICAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgICA8RHJhd2VyLlNjcmVlbiBuYW1lPVwiSG9tZVwiIGNvbXBvbmVudD17SW5qZWN0SE9DPFByb3BzLCBTbGljZXNIb21lPihIb21lLCB7fSl9IC8+XG4gICAgICAgIDwvRHJhd2VyLk5hdmlnYXRvcj5cbiAgICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBEcmF3ZXJOYXZpZ2F0aW9uO1xuIl19

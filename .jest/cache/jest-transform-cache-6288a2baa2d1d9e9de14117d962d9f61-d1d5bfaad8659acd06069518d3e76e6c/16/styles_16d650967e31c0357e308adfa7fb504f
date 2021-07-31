@@ -1,0 +1,94 @@
+756c943a03f178ac23f7c11e943fae00
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactNative = require("react-native");
+
+function cov_2mm7wr7hbh() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/presentation/screens/Splash/styles.ts";
+  var hash = "b39a1d3047e543b326e8ee3b6ee32b6a69175fbe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/presentation/screens/Splash/styles.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 10,
+          column: 4
+        },
+        end: {
+          line: 15,
+          column: 6
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 15
+          },
+          end: {
+            line: 9,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 40
+          },
+          end: {
+            line: 16,
+            column: 1
+          }
+        },
+        line: 9
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "b39a1d3047e543b326e8ee3b6ee32b6a69175fbe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_2mm7wr7hbh = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2mm7wr7hbh();
+
+var _default = function _default(props) {
+  cov_2mm7wr7hbh().f[0]++;
+  cov_2mm7wr7hbh().s[0]++;
+  return _reactNative.StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: props.backgroundScreens
+    }
+  });
+};
+
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy50cyJdLCJuYW1lcyI6WyJwcm9wcyIsIlN0eWxlU2hlZXQiLCJjcmVhdGUiLCJjb250YWluZXIiLCJmbGV4IiwiYmFja2dyb3VuZENvbG9yIiwiYmFja2dyb3VuZFNjcmVlbnMiXSwibWFwcGluZ3MiOiI7Ozs7O0FBS0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztlQUdlLGtCQUFDQSxLQUFELEVBQXlCO0FBQUE7QUFBQTtBQUNwQyxTQUFPQyx3QkFBV0MsTUFBWCxDQUFrQjtBQUNyQkMsSUFBQUEsU0FBUyxFQUFFO0FBQ1BDLE1BQUFBLElBQUksRUFBRSxDQURDO0FBRVBDLE1BQUFBLGVBQWUsRUFBRUwsS0FBSyxDQUFDTTtBQUZoQjtBQURVLEdBQWxCLENBQVA7QUFNSCxDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAYXV0aG9yIEh1Z28gR2FyY2lhXG4gKiBAZGVzY3JpcHRpb24gU3R5bGVzIG9mIHNwbGFzaFxuICogQHJldHVybnMgXG4gKi9cbmltcG9ydCB7IFN0eWxlU2hlZXQgfSBmcm9tICdyZWFjdC1uYXRpdmUnO1xuaW1wb3J0IHsgQ29uZmlnRW50aXR5IH0gZnJvbSAnQGhvb2tzL3VzZUNvbmZpZ1RoZW1lJztcblxuZXhwb3J0IGRlZmF1bHQgKHByb3BzOiBDb25maWdFbnRpdHkpID0+IHtcbiAgICByZXR1cm4gU3R5bGVTaGVldC5jcmVhdGUoe1xuICAgICAgICBjb250YWluZXI6IHtcbiAgICAgICAgICAgIGZsZXg6IDEsXG4gICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IHByb3BzLmJhY2tncm91bmRTY3JlZW5zXG4gICAgICAgIH1cbiAgICB9KVxufVxuIl19
