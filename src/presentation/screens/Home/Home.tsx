@@ -4,7 +4,7 @@
  * @returns 
  */
 import React, { useEffect, useState } from 'react';
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator, Text } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { fromJS, Map as ImmutableMap } from 'immutable';
@@ -57,19 +57,13 @@ const Home: React.FC<Props & SlicesHome> = (props) => {
             <Header
                 iconName='menu'
                 iconColor='#2E86C1'
-                title='Indicadores'
+                title='Home'
                 onPress={props.navigation.openDrawer}
             />
             {loadingRefresh ? (
                 <ActivityIndicator color='black' size={30} style={{ margin: 20 }} />
             ) : (
-                {/**<List
-                    dataSource={data}
-                    extraData={fromJS(indicadoresRedux)}
-                    renderItem={renderItem}
-                    refreshing={loadingRefresh}
-                    onRefresh={onRefresh}
-                />*/}
+                <Text>{'Hola mundo'}</Text>
             )}
         </SafeAreaView>
     )
