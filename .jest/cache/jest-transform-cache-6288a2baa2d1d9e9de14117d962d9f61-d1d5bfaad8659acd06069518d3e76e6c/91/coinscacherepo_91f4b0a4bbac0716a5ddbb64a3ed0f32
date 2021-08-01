@@ -1,0 +1,140 @@
+d4f5c914f5c6c8b61d635922916e63c5
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CoinsCacheRepo = void 0;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+function cov_7qb74bi4x() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/data/repositories/coins.cache.repo.ts";
+  var hash = "15cc70be7da05b810e53d0fb4667cec2a377be22";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/data/repositories/coins.cache.repo.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 44,
+          column: 9
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 45
+          },
+          end: {
+            line: 45,
+            column: 5
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "15cc70be7da05b810e53d0fb4667cec2a377be22"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_7qb74bi4x = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_7qb74bi4x();
+
+var CoinsCacheRepo = function () {
+  function CoinsCacheRepo() {
+    (0, _classCallCheck2.default)(this, CoinsCacheRepo);
+  }
+
+  (0, _createClass2.default)(CoinsCacheRepo, [{
+    key: "getCoins",
+    value: function getCoins() {
+      return _regenerator.default.async(function getCoins$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              cov_7qb74bi4x().f[0]++;
+              cov_7qb74bi4x().s[0]++;
+              return _context.abrupt("return", [{
+                "symbol": "BTC",
+                "name": "Bitcoin",
+                "nameid": "bitcoin",
+                "rank": 1,
+                "price_usd": "41765.09"
+              }, {
+                "symbol": "BTC",
+                "name": "Bitcoin-1",
+                "nameid": "bitcoin",
+                "rank": 1,
+                "price_usd": "41765.09"
+              }, {
+                "symbol": "BTC",
+                "name": "Bitcoin-2",
+                "nameid": "bitcoin",
+                "rank": 1,
+                "price_usd": "41765.09"
+              }, {
+                "symbol": "BTC",
+                "name": "Bitcoin-3",
+                "nameid": "bitcoin",
+                "rank": 1,
+                "price_usd": "41765.09"
+              }]);
+
+            case 3:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, null, null, null, Promise);
+    }
+  }]);
+  return CoinsCacheRepo;
+}();
+
+exports.CoinsCacheRepo = CoinsCacheRepo;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvaW5zLmNhY2hlLnJlcG8udHMiXSwibmFtZXMiOlsiQ29pbnNDYWNoZVJlcG8iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBV2FBLGM7Ozs7Ozs7V0FFVDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLCtDQUNXLENBQ0g7QUFDSSwwQkFBVSxLQURkO0FBRUksd0JBQVEsU0FGWjtBQUdJLDBCQUFVLFNBSGQ7QUFJSSx3QkFBUSxDQUpaO0FBS0ksNkJBQWE7QUFMakIsZUFERyxFQVFIO0FBQ0ksMEJBQVUsS0FEZDtBQUVJLHdCQUFRLFdBRlo7QUFHSSwwQkFBVSxTQUhkO0FBSUksd0JBQVEsQ0FKWjtBQUtJLDZCQUFhO0FBTGpCLGVBUkcsRUFlSDtBQUNJLDBCQUFVLEtBRGQ7QUFFSSx3QkFBUSxXQUZaO0FBR0ksMEJBQVUsU0FIZDtBQUlJLHdCQUFRLENBSlo7QUFLSSw2QkFBYTtBQUxqQixlQWZHLEVBc0JIO0FBQ0ksMEJBQVUsS0FEZDtBQUVJLHdCQUFRLFdBRlo7QUFHSSwwQkFBVSxTQUhkO0FBSUksd0JBQVEsQ0FKWjtBQUtJLDZCQUFhO0FBTGpCLGVBdEJHLENBRFg7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBhdXRob3IgSHVnbyBHYXJjaWFcbiAqIEBkZXNjcmlwdGlvbiBDYWNoZSByZXBvIGZvciBjb2lucyBcbiAqIEByZXR1cm5zIFxuICovXG4vL2ltcG9ydCBheGlvcyBmcm9tIFwiYXhpb3NcIjtcbi8vaW1wb3J0IFIgZnJvbSBcInJhbWRhXCI7XG5cbmltcG9ydCB7IENvaW5zQ29udHJhY3QgfSBmcm9tIFwiQGNvbnRyYWN0cy9jb2lucy5jb250cmFjdFwiO1xuaW1wb3J0IHsgQ29pbnNFbnRpdHkgfSBmcm9tIFwiQGVudGl0eS9jb2lucy5lbnRpdHlcIjtcblxuZXhwb3J0IGNsYXNzIENvaW5zQ2FjaGVSZXBvIGltcGxlbWVudHMgQ29pbnNDb250cmFjdCB7XG5cbiAgICBhc3luYyBnZXRDb2lucygpOiBQcm9taXNlPENvaW5zRW50aXR5W10+IHtcbiAgICAgICAgcmV0dXJuIFtcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBcInN5bWJvbFwiOiBcIkJUQ1wiLFxuICAgICAgICAgICAgICAgIFwibmFtZVwiOiBcIkJpdGNvaW5cIixcbiAgICAgICAgICAgICAgICBcIm5hbWVpZFwiOiBcImJpdGNvaW5cIixcbiAgICAgICAgICAgICAgICBcInJhbmtcIjogMSxcbiAgICAgICAgICAgICAgICBcInByaWNlX3VzZFwiOiBcIjQxNzY1LjA5XCIsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIFwic3ltYm9sXCI6IFwiQlRDXCIsXG4gICAgICAgICAgICAgICAgXCJuYW1lXCI6IFwiQml0Y29pbi0xXCIsXG4gICAgICAgICAgICAgICAgXCJuYW1laWRcIjogXCJiaXRjb2luXCIsXG4gICAgICAgICAgICAgICAgXCJyYW5rXCI6IDEsXG4gICAgICAgICAgICAgICAgXCJwcmljZV91c2RcIjogXCI0MTc2NS4wOVwiLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBcInN5bWJvbFwiOiBcIkJUQ1wiLFxuICAgICAgICAgICAgICAgIFwibmFtZVwiOiBcIkJpdGNvaW4tMlwiLFxuICAgICAgICAgICAgICAgIFwibmFtZWlkXCI6IFwiYml0Y29pblwiLFxuICAgICAgICAgICAgICAgIFwicmFua1wiOiAxLFxuICAgICAgICAgICAgICAgIFwicHJpY2VfdXNkXCI6IFwiNDE3NjUuMDlcIixcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgXCJzeW1ib2xcIjogXCJCVENcIixcbiAgICAgICAgICAgICAgICBcIm5hbWVcIjogXCJCaXRjb2luLTNcIixcbiAgICAgICAgICAgICAgICBcIm5hbWVpZFwiOiBcImJpdGNvaW5cIixcbiAgICAgICAgICAgICAgICBcInJhbmtcIjogMSxcbiAgICAgICAgICAgICAgICBcInByaWNlX3VzZFwiOiBcIjQxNzY1LjA5XCIsXG4gICAgICAgICAgICB9LFxuICAgICAgICBdXG4gICAgfVxufSJdfQ==

@@ -1,0 +1,49 @@
+75003e61200809111fa35bd3198276e9
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CoinsContract = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+function cov_mfbzkp1u9() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/domain/contracts/coins.contract.ts";
+  var hash = "3a3c43bd7ca978a3ab84a922b87b357ff2acebb6";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/domain/contracts/coins.contract.ts",
+    statementMap: {},
+    fnMap: {},
+    branchMap: {},
+    s: {},
+    f: {},
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "3a3c43bd7ca978a3ab84a922b87b357ff2acebb6"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_mfbzkp1u9 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_mfbzkp1u9();
+
+var CoinsContract = function CoinsContract() {
+  (0, _classCallCheck2.default)(this, CoinsContract);
+};
+
+exports.CoinsContract = CoinsContract;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvaW5zLmNvbnRyYWN0LnRzIl0sIm5hbWVzIjpbIkNvaW5zQ29udHJhY3QiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQU9zQkEsYSIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQGF1dGhvciBIdWdvIEdhcmNpYVxuICogQGRlc2NyaXB0aW9uIENvbnRyYWN0IG9mIENvaW5zXG4gKiBAcmV0dXJucyBcbiAqL1xuaW1wb3J0IHsgQ29pbnNFbnRpdHkgfSBmcm9tIFwiQGVudGl0eS9jb2lucy5lbnRpdHlcIjtcblxuZXhwb3J0IGFic3RyYWN0IGNsYXNzIENvaW5zQ29udHJhY3Qge1xuICAgIGFic3RyYWN0IGdldENvaW5zKCk6IFByb21pc2U8Q29pbnNFbnRpdHlbXT47XG59Il19

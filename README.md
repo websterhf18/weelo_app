@@ -6,10 +6,10 @@ A Big Real Estate company requires creating mobile application by obtain informa
 
 **Acceptance Criteria (AC):**
 
-- There must be a show a crypto currency list screen.
-- There must be a show a detail of crypto currency screen.
+- There must be a show a crypto currency list screen.*
+- There must be a show a detail of crypto currency screen.*
 - There must be a show a exchange to USD.
-- The list must be a filter list.
+- The list must have a filter of coins.
 
 - Get the data of crypto currency from Request.
 - Get the detail of crypto currency from Request.

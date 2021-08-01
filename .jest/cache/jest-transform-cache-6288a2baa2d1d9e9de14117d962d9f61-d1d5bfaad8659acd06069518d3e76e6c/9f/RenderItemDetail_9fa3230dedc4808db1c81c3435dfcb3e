@@ -1,0 +1,159 @@
+f221c78c6859aa6180c384c0422eed03
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactNative = require("react-native");
+
+var _dateFns = require("date-fns");
+
+var _useConfigTheme = _interopRequireDefault(require("../../../data/hooks/useConfigTheme"));
+
+var _styles = _interopRequireDefault(require("./styles"));
+
+function cov_b9481qsj2() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/presentation/components/RenderItemDetail/RenderItemDetail.tsx";
+  var hash = "a012353ad2d5f129241bdd079c8188892893b518";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/presentation/components/RenderItemDetail/RenderItemDetail.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 19,
+          column: 42
+        },
+        end: {
+          line: 30,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 20,
+          column: 19
+        },
+        end: {
+          line: 20,
+          column: 24
+        }
+      },
+      "2": {
+        start: {
+          line: 21,
+          column: 26
+        },
+        end: {
+          line: 21,
+          column: 42
+        }
+      },
+      "3": {
+        start: {
+          line: 22,
+          column: 17
+        },
+        end: {
+          line: 22,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 24,
+          column: 2
+        },
+        end: {
+          line: 29,
+          column: 3
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 19,
+            column: 42
+          },
+          end: {
+            line: 19,
+            column: 43
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 53
+          },
+          end: {
+            line: 30,
+            column: 1
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a012353ad2d5f129241bdd079c8188892893b518"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_b9481qsj2 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_b9481qsj2();
+cov_b9481qsj2().s[0]++;
+
+var RenderItemDetail = function RenderItemDetail(props) {
+  cov_b9481qsj2().f[0]++;
+
+  var _ref = (cov_b9481qsj2().s[1]++, props),
+      item = _ref.item;
+
+  var _ref2 = (cov_b9481qsj2().s[2]++, (0, _useConfigTheme.default)()),
+      configTheme = _ref2.configTheme;
+
+  var styles = (cov_b9481qsj2().s[3]++, (0, _styles.default)(configTheme));
+  cov_b9481qsj2().s[4]++;
+  return _react.default.createElement(_reactNative.View, {
+    style: styles.container
+  }, _react.default.createElement(_reactNative.Text, {
+    style: styles.date
+  }, (0, _dateFns.format)((0, _dateFns.parseISO)(item.get('fecha')), 'yyyy-MM-dd')), _react.default.createElement(_reactNative.Text, {
+    style: styles.valor
+  }, "$ ", item.get('valor')));
+};
+
+var _default = RenderItemDetail;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlbmRlckl0ZW1EZXRhaWwudHN4Il0sIm5hbWVzIjpbIlJlbmRlckl0ZW1EZXRhaWwiLCJwcm9wcyIsIml0ZW0iLCJjb25maWdUaGVtZSIsInN0eWxlcyIsImNvbnRhaW5lciIsImRhdGUiLCJnZXQiLCJ2YWxvciJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUtBOztBQUNBOztBQUVBOztBQUVBOztBQUVBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNQSxJQUFNQSxnQkFBaUMsR0FBRyxTQUFwQ0EsZ0JBQW9DLENBQUNDLEtBQUQsRUFBVztBQUFBOztBQUNuRCxzQ0FBaUJBLEtBQWpCO0FBQUEsTUFBUUMsSUFBUixRQUFRQSxJQUFSOztBQUNBLHVDQUF3Qiw4QkFBeEI7QUFBQSxNQUFRQyxXQUFSLFNBQVFBLFdBQVI7O0FBQ0EsTUFBTUMsTUFBTSw0QkFBRyxxQkFBVUQsV0FBVixDQUFILENBQVo7QUFIbUQ7QUFLbkQsU0FDRSw2QkFBQyxpQkFBRDtBQUFNLElBQUEsS0FBSyxFQUFFQyxNQUFNLENBQUNDO0FBQXBCLEtBQ0UsNkJBQUMsaUJBQUQ7QUFBTSxJQUFBLEtBQUssRUFBRUQsTUFBTSxDQUFDRTtBQUFwQixLQUEyQixxQkFBTyx1QkFBU0osSUFBSSxDQUFDSyxHQUFMLENBQVMsT0FBVCxDQUFULENBQVAsRUFBb0MsWUFBcEMsQ0FBM0IsQ0FERixFQUVFLDZCQUFDLGlCQUFEO0FBQU0sSUFBQSxLQUFLLEVBQUVILE1BQU0sQ0FBQ0k7QUFBcEIsV0FBOEJOLElBQUksQ0FBQ0ssR0FBTCxDQUFTLE9BQVQsQ0FBOUIsQ0FGRixDQURGO0FBTUQsQ0FYRDs7ZUFhZVAsZ0IiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBhdXRob3IgSHVnbyBHYXJjaWFcbiAqIEBkZXNjcmlwdGlvbiBEZXRhaWwgSXRlbSBDb21wb25lbnRcbiAqIEByZXR1cm5zIFxuICovXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgVGV4dCwgVmlldyB9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XG5pbXBvcnQgeyBNYXAgYXMgSW1tdXRhYmxlTWFwIH0gZnJvbSAnaW1tdXRhYmxlJztcbmltcG9ydCB7IGZvcm1hdCwgcGFyc2VJU08gfSBmcm9tICdkYXRlLWZucyc7XG5cbmltcG9ydCB1c2VDb25maWdUaGVtZSBmcm9tICdAaG9va3MvdXNlQ29uZmlnVGhlbWUnO1xuXG5pbXBvcnQgdXNlU3R5bGVzIGZyb20gJy4vc3R5bGVzJztcblxuaW50ZXJmYWNlIFByb3BzIHsgXG4gIGl0ZW06IEltbXV0YWJsZU1hcDxzdHJpbmcsIGFueT47XG59XG5cbmNvbnN0IFJlbmRlckl0ZW1EZXRhaWw6IFJlYWN0LkZDPFByb3BzPiA9IChwcm9wcykgPT4ge1xuICBjb25zdCB7IGl0ZW0gfSA9IHByb3BzO1xuICBjb25zdCB7IGNvbmZpZ1RoZW1lIH0gPSB1c2VDb25maWdUaGVtZSgpO1xuICBjb25zdCBzdHlsZXMgPSB1c2VTdHlsZXMoY29uZmlnVGhlbWUpO1xuXG4gIHJldHVybiAoXG4gICAgPFZpZXcgc3R5bGU9e3N0eWxlcy5jb250YWluZXJ9ID5cbiAgICAgIDxUZXh0IHN0eWxlPXtzdHlsZXMuZGF0ZX0+e2Zvcm1hdChwYXJzZUlTTyhpdGVtLmdldCgnZmVjaGEnKSksICd5eXl5LU1NLWRkJyl9PC9UZXh0PlxuICAgICAgPFRleHQgc3R5bGU9e3N0eWxlcy52YWxvcn0+JCB7aXRlbS5nZXQoJ3ZhbG9yJyl9PC9UZXh0PlxuICAgIDwvVmlldz5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBSZW5kZXJJdGVtRGV0YWlsO1xuIl19

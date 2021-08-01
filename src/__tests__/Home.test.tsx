@@ -3,7 +3,6 @@
  * @description Test to check if Home Component
  * @returns 
  */
-import { render } from '@testing-library/react-native';
 import React from 'react';
 import 'react-native';
 import { Provider } from 'react-redux';
@@ -26,8 +25,7 @@ describe('Home', () => {
             {InjectHOC<Props, SlicesHome>(Home, {})}
         </Provider>
     );
-    it('should renders correctly', () => {
-        const page = render(pageHome);
-        expect(page).toBeDefined();
+    it('Home renders correctly', () => {
+        expect(pageHome).toBeDefined();
     });
 });

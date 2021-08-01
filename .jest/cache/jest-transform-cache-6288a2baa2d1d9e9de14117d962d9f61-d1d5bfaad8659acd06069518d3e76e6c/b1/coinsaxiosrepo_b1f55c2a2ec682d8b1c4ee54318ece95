@@ -1,0 +1,116 @@
+c5767db82e55e32c68eeb0acd10c687c
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CoinsAxiosRepo = void 0;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+function cov_1ik6kfbjqm() {
+  var path = "/Users/Mac/Desktop/weelo_app/src/data/repositories/coins.axios.repo.ts";
+  var hash = "2fad4cfdc67566e87d523094b4a83ee6a3d46b6d";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/Mac/Desktop/weelo_app/src/data/repositories/coins.axios.repo.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 51
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 15,
+            column: 4
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 45
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        line: 15
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "2fad4cfdc67566e87d523094b4a83ee6a3d46b6d"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    cov_1ik6kfbjqm = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1ik6kfbjqm();
+
+var CoinsAxiosRepo = function () {
+  function CoinsAxiosRepo() {
+    (0, _classCallCheck2.default)(this, CoinsAxiosRepo);
+  }
+
+  (0, _createClass2.default)(CoinsAxiosRepo, [{
+    key: "getCoins",
+    value: function getCoins() {
+      return _regenerator.default.async(function getCoins$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              cov_1ik6kfbjqm().f[0]++;
+              cov_1ik6kfbjqm().s[0]++;
+              throw new Error("Method not implemented.");
+
+            case 3:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, null, null, null, Promise);
+    }
+  }]);
+  return CoinsAxiosRepo;
+}();
+
+exports.CoinsAxiosRepo = CoinsAxiosRepo;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvaW5zLmF4aW9zLnJlcG8udHMiXSwibmFtZXMiOlsiQ29pbnNBeGlvc1JlcG8iLCJFcnJvciJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFZYUEsYzs7Ozs7OztXQUVUO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsb0JBQ1UsSUFBSUMsS0FBSixDQUFVLHlCQUFWLENBRFY7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBhdXRob3IgSHVnbyBHYXJjaWFcbiAqIEBkZXNjcmlwdGlvbiBDYWNoZSByZXBvIGZvciBjb2lucyBcbiAqIEByZXR1cm5zIFxuICovXG4vLyBBeGlvcyBVUkwgaHR0cHM6Ly9hcGkuY29pbmxvcmUubmV0L2FwaS90aWNrZXJzLz9zdGFydD0wJmxpbWl0PTIwXG4vL2ltcG9ydCBheGlvcyBmcm9tIFwiYXhpb3NcIjtcbi8vaW1wb3J0IFIgZnJvbSBcInJhbWRhXCI7XG5cbmltcG9ydCB7IENvaW5zQ29udHJhY3QgfSBmcm9tIFwiQGNvbnRyYWN0cy9jb2lucy5jb250cmFjdFwiO1xuaW1wb3J0IHsgQ29pbnNFbnRpdHkgfSBmcm9tIFwiQGVudGl0eS9jb2lucy5lbnRpdHlcIjtcblxuZXhwb3J0IGNsYXNzIENvaW5zQXhpb3NSZXBvIGltcGxlbWVudHMgQ29pbnNDb250cmFjdCB7XG5cbiAgICBhc3luYyBnZXRDb2lucygpOiBQcm9taXNlPENvaW5zRW50aXR5W10+IHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKFwiTWV0aG9kIG5vdCBpbXBsZW1lbnRlZC5cIik7XG4gICAgfVxufSJdfQ==
