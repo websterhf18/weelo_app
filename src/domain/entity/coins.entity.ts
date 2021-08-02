@@ -3,21 +3,14 @@
  * @description Entity of Coins
  * @returns 
  */
-/**export interface IndicadorEntity {
+export interface CoinsEntity {
     name: string;
     data: Data
-    
 }
 interface Data {
-    codigo: string;
-    nombre: string;
-    unidad_medida: string;
-    fecha: string;
-    valor: string;
+    symbol: string;
+    name: string;
+    nameid: string;
+    rank: number;
+    price_usd: string;
 }
-export interface IndicadorByTypeEntity {
-    fecha: string;
-    valor: string;
-}**/
-
-export interface CoinsEntity {}

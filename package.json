@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest --verbose --coverage",
+    "test": "jest --verbose",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "@testing-library/jest-native": "^4.0.1",
     "@testing-library/react-native": "^7.2.0",
     "@types/jest": "^26.0.24",
+    "@types/ramda": "^0.27.44",
     "@types/react": "^17.0.15",
     "@types/react-native": "^0.64.12",
     "@types/react-native-vector-icons": "^6.4.8",

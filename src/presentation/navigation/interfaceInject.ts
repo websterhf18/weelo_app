@@ -12,4 +12,6 @@ export interface Props {
 }
 
 export interface SlicesDetail { }
-export interface SlicesHome { }
+export interface SlicesHome { 
+    getCoinsRedux: () => (dispatch: Dispatch) => void;
+}

@@ -27,30 +27,43 @@ const Home: React.FC<Props & SlicesHome> = (props) => {
     const styles = useStyles(configTheme);
 
     const dispatch = useDispatch();
-    //const indicadoresRedux = useSelector(({ indicadores }: { indicadores: any }) => indicadores.indicadores);
+    const coinsRedux = useSelector(({ coins }: { coins: any }) => coins.coins_list);
 
-    //const [data, setData] = useState(fromJS([]));
+    const [data, setData] = useState(fromJS([]));
     const [loadingRefresh, setLoadingRefresh] = useState(false)
-
     useEffect(() => {
-        //console.log('indicadoresRedux', indicadoresRedux)
-        //setData(fromJS(indicadoresRedux))
-    }, [/**indicadoresRedux**/])
+        const unsubscribe = props.navigation.addListener('focus', async (e: any) => {
+            async function fetch() {
+                try {
+                    setLoadingRefresh(true);
+                    await dispatch(props.getCoinsRedux());
+                    setLoadingRefresh(false);
+                } catch (error) {
+                    console.log('**** ERROR in View *****', error);
+                }
+            }
+            fetch()
+        });
+        return unsubscribe;
+    }, [props.navigation])
+    useEffect(() => {
+        console.log('coinsRedux', coinsRedux)
+        setData(fromJS(coinsRedux))
+    }, [coinsRedux])
 
     const onRefresh = async () => {
         try {
             setLoadingRefresh(true);
-            //await dispatch(props.getIndicadoresRedux)
+            await dispatch(props.getCoinsRedux)
             setLoadingRefresh(false);
         } catch (error) {
             setLoadingRefresh(false);
         }
     }
-    /**const renderItem = ({ item, index }: { item: ImmutableMap<string, any>, index: number }) => (
-        <RenderItem item={item} onPress={getInfoItem} onPressInfo={showInfoItem} />
+    const renderItem = ({ item, index }: { item: ImmutableMap<string, any>, index: number }) => (
+        <RenderItem item={item} onPress={getInfoItem} />
     )
     const getInfoItem = (item: ImmutableMap<string, any>) => props.navigation.navigate('Detail', { item: item.toJS() })
-    const showInfoItem = (item: ImmutableMap<string, any>) => props.navigation.navigate('DetailItem', { item: item.toJS() })**/
 
     return (
         <SafeAreaView style={styles.container}>
@@ -63,7 +76,13 @@ const Home: React.FC<Props & SlicesHome> = (props) => {
             {loadingRefresh ? (
                 <ActivityIndicator color='black' size={30} style={{ margin: 20 }} />
             ) : (
-                <Text testID="jest_id">{'Hola mundo'}</Text>
+                <List 
+                    dataSource={data}
+                    extraData={fromJS(coinsRedux)}
+                    renderItem={renderItem}
+                    refreshing={loadingRefresh}
+                    onRefresh={onRefresh}
+                />
             )}
         </SafeAreaView>
     )

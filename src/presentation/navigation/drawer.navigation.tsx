@@ -11,7 +11,7 @@ import { Props, SlicesHome } from './interfaceInject';
 
 import Home from '@screens/Home/Home';
 
-//import { getCoinsRedux } from '@redux/coinsSlice';
+import { getCoinsRedux } from '@redux/coinsSlice';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,7 +23,7 @@ function DrawerNavigation() {
                 headerShown: false,
             }}
         >
-            <Drawer.Screen name="Home" component={InjectHOC<Props, SlicesHome>(Home, {})} />
+            <Drawer.Screen name="Home" component={InjectHOC<Props, SlicesHome>(Home, { getCoinsRedux })} />
         </Drawer.Navigator>
     );
 }

@@ -1,5 +1,8 @@
 # Crypto Currency App
 
+## Preview
+![alt screenshot](https://github.com/websterhf18/weelo_app/blob/master/screenshot.png?raw=true)
+
 ## Exchange to USD
 
 A Big Real Estate company requires creating mobile application by obtain information about crypto currency in USD, because governance decided used by currency default to EEUU. this one need create a list crypto currency, show exchange to USD, filter list and show detail. 

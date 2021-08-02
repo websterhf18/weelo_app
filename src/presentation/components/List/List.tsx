@@ -11,40 +11,40 @@ import useConfigTheme from '@hooks/useConfigTheme';
 import useStyles from './styles';
 
 interface Props {
-  dataSource: ImmutableList<ImmutableMap<string, any>>;
-  renderItem: (item: any) => JSX.Element;
-  refreshing: boolean;
-  onEndReachedThreshold?: number;
-  onEndReached?: () => void;
-  onRefresh?: () => void;
-  extraData: any;
+    dataSource: ImmutableList<ImmutableMap<string, any>>;
+    //dataSource: any;
+    renderItem: (item: any) => JSX.Element;
+    refreshing: boolean;
+    onEndReachedThreshold?: number;
+    onEndReached?: () => void;
+    onRefresh?: () => void;
+    extraData: any;
 }
 
 const List: React.FC<Props> = (props) => {
-  const { configTheme } = useConfigTheme();
-  const styles = useStyles(configTheme);
+    const { configTheme } = useConfigTheme();
+    const styles = useStyles(configTheme);
 
-  const { dataSource } = props;
-  const getItem = (data: any, index: number) => data.get(index);
-  const getItemCount = () =>
-  dataSource.size;
-  const keyExtractor = (item: ImmutableMap<string, any>, index: number) => `${item.size}-${index}`;
-  const noFoundData = () => <Text style={styles.text}>No hay información *</Text>;
+    const { dataSource } = props;
+    const getItem = (data: any, index: number) => data.get(index);
+    const getItemCount = () => dataSource.size;
+    const keyExtractor = (item: ImmutableMap<string, any>, index: number) => `${item.size}-${index}`;
+    const notFoundData = () => <Text style={styles.text}>No information *</Text>;
 
-  return (
-    <View style={styles.container}>
-      <VirtualizedList
-        { ...props }
-        maxToRenderPerBatch={5}
-        initialNumToRender={5}
-        getItem={getItem}
-        getItemCount={getItemCount}
-        data={dataSource}
-        keyExtractor={keyExtractor}
-        ListEmptyComponent={noFoundData}
-      />
-    </View>
-  )
+    return (
+        <View style={styles.container}>
+            <VirtualizedList
+                {...props}
+                maxToRenderPerBatch={5}
+                initialNumToRender={5}
+                getItem={getItem}
+                getItemCount={getItemCount}
+                data={dataSource}
+                keyExtractor={keyExtractor}
+                ListEmptyComponent={notFoundData}
+            />
+        </View>
+    )
 }
 
 export default List;
