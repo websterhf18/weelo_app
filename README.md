@@ -1,7 +1,8 @@
 # Crypto Currency App
 
 ## Preview
-![screenshot](https://github.com/websterhf18/weelo_app/blob/main/screenshot.png?raw=true =250x)
+
+<img src="https://github.com/websterhf18/weelo_app/blob/main/screenshot.png?raw=true" width="200">
 
 ## Exchange to USD
 
