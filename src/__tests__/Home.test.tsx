@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 
 import Home from '../presentation/screens/Home/Home';
 import store from '../data/redux';
+import { getCoinsRedux } from '../data/redux/coinsSlice';
 
 /**Inject HOC Functions */
 import { SlicesHome } from '../presentation/navigation/interfaceInject';
@@ -22,7 +23,7 @@ describe('Home', () => {
     jest.useFakeTimers();
     const pageHome = (
         <Provider store={store}>
-            {InjectHOC<Props, SlicesHome>(Home, {})}
+            {InjectHOC<Props, SlicesHome>(Home, { getCoinsRedux })}
         </Provider>
     );
     it('Home renders correctly', () => {

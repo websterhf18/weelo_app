@@ -21,7 +21,7 @@ export class CoinsAxiosRepo implements CoinsContract {
             })
             const sortByNameCaseInsensitive: any = R.sortBy(R.compose(R.toLower, R.prop('name')));
             return sortByNameCaseInsensitive(newData);
-            return newData;
+            //return newData;
         } catch (error) {
             console.log('***** Error CoinsAxiosRepo -> getCoins *****', error.message);
             throw new Error(error);

@@ -3,6 +3,7 @@
 ## Preview
 
 <img src="https://github.com/websterhf18/weelo_app/blob/main/screenshot.png?raw=true" width="200">
+<img src="https://github.com/websterhf18/weelo_app/blob/main/screenshot_two.png?raw=true" width="200">
 
 ## Exchange to USD
 
@@ -16,7 +17,6 @@ A Big Real Estate company requires creating mobile application by obtain informa
 - The list must have a filter of coins.
 
 - Get the data of crypto currency from Request.
-- Get the detail of crypto currency from Request.
 
 ## Folder Structure
 

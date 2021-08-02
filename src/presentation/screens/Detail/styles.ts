@@ -19,7 +19,7 @@ export default (props: ConfigEntity) => {
             marginVertical: 10,
         },
         containerBox: {
-            height: 150,
+            height: 80,
             flexDirection: 'row',
         },
         box: {

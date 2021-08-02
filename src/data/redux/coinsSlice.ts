@@ -20,7 +20,13 @@ export const getCoinsRedux = () => async (dispatch: Dispatch) => {
 const coinsSlice = createSlice({
     name: 'coins',
     initialState: {
-        coins_list: []
+        coins_list: [],
+        detail: {
+            name: '',
+            price: 0,
+            price_usd: 0,
+            price_total: 0
+        }
     },
     reducers: {
         setCoins: (state, action) => {

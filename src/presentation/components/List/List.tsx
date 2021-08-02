@@ -11,8 +11,7 @@ import useConfigTheme from '@hooks/useConfigTheme';
 import useStyles from './styles';
 
 interface Props {
-    dataSource: ImmutableList<ImmutableMap<string, any>>;
-    //dataSource: any;
+    dataSource: any;
     renderItem: (item: any) => JSX.Element;
     refreshing: boolean;
     onEndReachedThreshold?: number;
